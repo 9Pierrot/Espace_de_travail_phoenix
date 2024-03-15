@@ -8,6 +8,12 @@ Cette capacité de renaissance est souvent interprétée comme un symbole de ré
 tels que le feu. En raison de cette symbolique, le phénix est parfois utilisé comme emblème dans les domaines liés à la protection contre les incendies et à 
 la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 
+
+## sommaire 
+1. Objectifs du projet 
+2. listes du matériels 
+
+
 ## Les objectifs du projet
 Le système doit pouvoir
 * Se déplacer de façon autonome
