@@ -17,9 +17,9 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 ## Les objectifs du projet
 Le système doit pouvoir
 * Se déplacer de façon autonome
-* Éviter les obstacles
 * Détecter les flammes et la fumée
 * Éteindre les flammes
+* Éviter les obstacles
 * Transmettre une capture vidéo à un téléphone mobile
 
 ## Liste du matériel 
