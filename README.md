@@ -15,3 +15,21 @@ Le système doit pouvoir
 * Détecter les flammes et la fumée
 * Éteindre les flammes
 * Transmettre une capture vidéo à un téléphone mobile
+
+## Liste du matériel 
+
+|**COMPOSANTS**| **QUANTITE** |
+|--------------|----------|
+|Carte Arduino | 1        |
+|Servomoteurs | 1        |
+|ESP 32 CAM| 1        |
+|Moteur DC| 2        |
+|Module de pilote de moteurs| 1        |
+|Capteur de flamme module KY-026| 1        |
+|Capteur de gaz| 1        |
+|Capteurs ultrason| 1        |
+|Capteur de niveau d’eau| 1        | 
+|Pompe à eau| 1        |
+|Tuyau d’eau| 1        |
+|Réservoir d’eau| 1        |
+
