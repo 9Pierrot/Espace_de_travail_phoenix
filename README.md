@@ -1,6 +1,6 @@
 # Phoenix
 ## À propos du projet
-Foenix est une robot d'instinction de feu d'incendie destiné à acompagnerles sapeurs pompiers et à les aider et à être plus efficaces dans leurs 
+Phoenix est une robot d'instinction de feu d'incendie destiné à acompagnerles sapeurs pompiers et à les aider et à être plus efficaces dans leurs 
 missions de sauvetage. 
 
 Dans la mythologie, le phénix est un oiseau légendaire qui est capable de renaître de ses cendres après avoir été consumé par le feu. 
