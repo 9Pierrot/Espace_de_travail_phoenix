@@ -34,7 +34,7 @@ Le système doit pouvoir
 
 ## CONCEPTION ET MECANISMES
 
-    ** Etapes du travail**
+    ## Etapes du travail
 
 L'équipe a été scindé en trois parties : 
 * Une partie s'occupant de la partie électronique
