@@ -24,7 +24,7 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
      Phoenix est une robot d'instinction de feu d'incendie destiné à acompagner les sapeurs pompiers et à les aider à être plus efficaces dans leurs 
 missions de sauvetage. 
 
-1. OBJECTIFS DU PROJETS 
+## OBJECTIFS DU PROJETS 
 Le système doit pouvoir
 * Se déplacer de façon autonome
 * Détecter les flammes et la fumée
@@ -34,7 +34,7 @@ Le système doit pouvoir
 
 ## CONCEPTION ET MECANISMES
 
-    ** Etapes du travail
+    ** Etapes du travail**
 
 L'équipe a été scindé en trois parties : 
 * Une partie s'occupant de la partie électronique
