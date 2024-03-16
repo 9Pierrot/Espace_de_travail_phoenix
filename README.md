@@ -19,7 +19,7 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 8. sources et Date de consultation
 9. conclusion 
 
-INTRODUCTION
+## INTRODUCTION
 
      Phoenix est une robot d'instinction de feu d'incendie destiné à acompagner les sapeurs pompiers et à les aider à être plus efficaces dans leurs 
 missions de sauvetage. 
@@ -41,7 +41,7 @@ L'équipe a été scindé en trois parties :
 * Une partie qui s'occupe du design et de la modélisation 3D
 * Une partie qui s'occupe de la documentation
 
-  a-LISTES DU MATERIELS
+  ## LISTES DU MATERIELS
 
 |**COMPOSANTS**| **QUANTITE** |
 |--------------|---|
@@ -57,7 +57,7 @@ L'équipe a été scindé en trois parties :
 |Tuyau d’eau| 1 |
 |Réservoir d’eau| 1 |
 
- b-Réalisation du premier objectif: Déplacement du robot **Phoenix**.
+ ## Réalisation du premier objectif: Déplacement du robot **Phoenix**.
 
  * Pour assurer le déplacement du robot nous allons utiliser des servos débridés
 
