@@ -33,3 +33,14 @@ Le système doit pouvoir
 |Tuyau d’eau| 1 |
 |Réservoir d’eau| 1 |
 
+
+## Etapes du travail
+
+L'équipe a été scindé en trois parties : 
+* Une partie s'occupant de la partie électronique
+* Une partie qui s'occupe du design et de la modélisation 3D
+* Une partie qui s'occupe de la documentation
+
+### 1ere étape : Déplacement du robot 
+
+* Pour assurer le déplacement du robot nous allons utiliser des servos débridés
