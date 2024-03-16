@@ -32,9 +32,9 @@ Le système doit pouvoir
 * Éviter les obstacles
 * Transmettre une capture vidéo à un téléphone mobile
 
-2. CONCEPTION ET MECANISMES
+## CONCEPTION ET MECANISMES
 
- ## Etapes du travail
+    ## Etapes du travail
 
 L'équipe a été scindé en trois parties : 
 * Une partie s'occupant de la partie électronique
@@ -66,7 +66,7 @@ L'équipe a été scindé en trois parties :
  * Programme de cette partie 
 
      
-3. Détection de fumée et de flamme
+## Détection de fumée et de flamme
    
  * Pour assurer la detection de fumée et de flamme nous avons utilisés
 
@@ -75,7 +75,7 @@ L'équipe a été scindé en trois parties :
  *  Programme de cette partie 
 
 
-5. système d'Extinction
+## système d'Extinction
 
  * Mécanisme pour éteinfre les flammes est 
 
