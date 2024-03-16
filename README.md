@@ -60,6 +60,7 @@ L'équipe a été scindé en trois parties :
  ## Réalisation du premier objectif: Déplacement du robot **Phoenix**.
 
  * Pour assurer le déplacement du robot nous allons utiliser des servos débridés
+ * 
 
 
      
