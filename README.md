@@ -59,21 +59,21 @@ L'équipe a été scindé en trois parties :
 
  ## Réalisation du premier objectif: Déplacement du robot **Phoenix**.
 
- * Pour assurer le déplacement du robot nous allons utiliser des servos débridés
- * 
+  ## Pour assurer le déplacement du robot nous allons utiliser des servos débridés
+   
 
 
      
- * Programme de cette partie 
+   ## Programme
 
      
 ## Détection de fumée et de flamme
-   
- * Pour assurer la detection de fumée et de flamme nous avons utilisés
+
+   ## Pour assurer la detection de fumée et de flamme nous avons utilisés
 
 
    
- *  Programme de cette partie 
+ ##  Programme de cette partie 
 
 
 ## système d'Extinction
