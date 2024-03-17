@@ -8,7 +8,7 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 
 
 ## sommaire 
-0.Introduction
+0. Introduction
 1. Objectifs du projet 
 2. Conception et Mécanisme 
 3. Detection de fumée et de flamme
@@ -34,7 +34,8 @@ Le système doit pouvoir
 
 ## CONCEPTION ET MECANISMES
 
-    ## Etapes du travail
+
+    * Etapes du travail 
 
 L'équipe a été scindé en trois parties : 
 * Une partie s'occupant de la partie électronique
@@ -100,4 +101,29 @@ L'équipe a été scindé en trois parties :
 
    
 ## Test des trois premiers objectifs 
+
+
+
+## Transfert de données video
+
+
+## Sécurité et Précaution ( comment utiliser le robot \ le faire fonctionner)
+
+* Mode d'utilisation
+  
+* Comment le faire fonctionner 
+
+
+## Perspectives d'Amélioration
+
+
+
+
+## sources et Date de consultation
+
+
+
+
+## conclusion 
+
 
