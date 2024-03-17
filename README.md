@@ -20,8 +20,7 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 9. conclusion 
 
 ## INTRODUCTION
-
-     Phoenix est une robot d'instinction de feu d'incendie destiné à acompagner les sapeurs pompiers et à les aider à être plus efficaces dans leurs 
+ Phoenix est une robot d'instinction de feu d'incendie destiné à acompagner les sapeurs pompiers et à les aider à être plus efficaces dans leurs 
 missions de sauvetage. 
 Les incendies sont des catastrophes imprévisibles qui exigent des interventions rapides et éfficaces. C’est là que notre mini robot pompier **Phoenix** entre en scène. Intelligent, ce petit héros mécanique est conçu pour assister ; faciliter ;aider les pompiers dans leur activités quotidiennes. 
 
