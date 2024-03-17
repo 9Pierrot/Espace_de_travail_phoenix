@@ -116,8 +116,12 @@ L'équipe a été scindé en trois parties :
 
 ## Perspectives d'Amélioration
 
-
-
+* Le robot **Phoenix** pourrait etre améliorer en pouvant pénétrer dans des environnements à haut risque tels que les tunnels, les parkings souterrains, les sites industriels et les raffineries. Équipé d’un jet d’eau diffusant, il peut se protéger de la chaleur intense.Doté d’un porte-brancard, le  **Phoenix** pourrait  assiste les pompiers en facilitant l’évacuation des blessés. Dans des conditions de visibilité réduite, il deviendra leur précieux allié.Le plateau technique de  **Phoenix**  peut etre améliorer de façon à  accueillir une cage à outils ou des sangles, permettant le transport de matériel lourd sur le terrain.
+* Des Performances Impressionnantes 
+Vitesse : Jusqu’à plus de  12 km/h.
+Autonomie : plus de 22 km.
+Traction : 300 m de tuyau d’eau.
+Charge Utile : 800 kg.
 
 ## sources et Date de consultation
 
