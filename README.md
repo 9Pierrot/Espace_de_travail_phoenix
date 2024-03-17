@@ -7,7 +7,7 @@ tels que le feu. En raison de cette symbolique, le phénix est parfois utilisé 
 la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 
 
-## sommaire 
+## Sommaire
 1. Introduction
 2. Objectifs du projet 
 3. Conception et mécanisme 
@@ -19,13 +19,14 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 9. sources et Date de consultation
 10. conclusion 
 
-## INTRODUCTION
+## Introduction
 
 Phoenix est une robot d'instinction de feu d'incendie destiné à acompagner les sapeurs pompiers et à les aider à être 
 plus efficaces dans leurs missions de sauvetage. 
 Les incendies sont des catastrophes imprévisibles qui exigent des interventions rapides et éfficaces. C’est là que 
 notre mini robot pompier **Phoenix** entre en scène. Intelligent, ce petit héros mécanique est conçu pour assister et 
-aider les pompiers dans leur activités quotidiennes. 
+aider les pompiers dans leur activités quotidiennes.
+
 
 ## OBJECTIFS DU PROJETS 
 Le système doit pouvoir :
@@ -37,6 +38,7 @@ Le système doit pouvoir :
 
 ## CONCEPTION ET MECANISMES
 
+
 ### Etapes du travail
 
 L'équipe a été scindé en trois parties : 
@@ -46,19 +48,19 @@ L'équipe a été scindé en trois parties :
 
 ### Liste du matériel
 
-|**COMPOSANTS**| **QUANTITE** |
-|--------------|--------------|
-|Carte Arduino | 1            |
-|Servomoteurs | 5            |
-|ESP 32 CAM| 1            |
-|Module de pilote de moteurs| 1            |
-|Capteur de flamme | 1            |
-|Capteur de gaz| 1            |
-|Capteurs ultrason| 1            |
-|Capteur de niveau d’eau| 1            | 
-|Pompe à eau| 1            |
-|Tuyau d’eau| 1            |
-|Réservoir d’eau| 1            |
+| **COMPOSANTS**              | **QUANTITE** |
+|-----------------------------|:------------:|
+| Carte Arduino               |      1       |
+| Servomoteurs                |      5       |
+| ESP 32 CAM                  |      1       |
+| Module de pilote de moteurs |      1       |
+| Capteur de flamme           |      1       |
+| Capteur de gaz              |      1       |
+| Capteurs ultrason           |      1       |
+| Capteur de niveau d’eau     |      1       | 
+| Pompe à eau                 |      1       |
+| Tuyau d’eau                 |      1       |
+| Réservoir d’eau             |      1       |
 
 ### Réalisation du premier objectif: Déplacement du robot
 
@@ -103,4 +105,40 @@ Pour assurer le déplacement du robot nous allons utiliser des servos débridés
 
    
 ### Test des trois premiers objectifs 
+
+
+
+### Transfert de données video
+
+
+### Sécurité et Précaution ( comment utiliser le robot \ le faire fonctionner)
+
+* Mode d'utilisation
+  
+* Comment le faire fonctionner 
+
+
+### Perspectives d'Amélioration
+
+* Le robot **Phoenix** pourrait etre améliorer en pouvant pénétrer dans des environnements à haut risque tels que les 
+tunnels, les parkings souterrains, les sites industriels et les raffineries. Équipé d’un jet d’eau diffusant, il peut 
+se protéger de la chaleur intense.Doté d’un porte-brancard, le  **Phoenix** pourrait  assiste les pompiers en facilitant 
+l’évacuation des blessés. Dans des conditions de visibilité réduite, il deviendra leur précieux allié.Le plateau 
+technique de  **Phoenix**  peut etre améliorer de façon à  accueillir une cage à outils ou des sangles, permettant le 
+* transport de matériel lourd sur le terrain.
+
+
+* Des Performances Impressionnantes comme la 
+Vitesse : Jusqu’à plus de  12 km/h.
+Autonomie : plus de 22 km.
+Traction : 300 m de tuyau d’eau.
+Charge Utile : 800 kg.
+
+### Sources et date de consultation
+
+
+
+
+### Conclusion 
+
 
