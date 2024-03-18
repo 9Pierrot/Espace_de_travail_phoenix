@@ -177,7 +177,7 @@ Voici quelques liens vers des vidéos et des modèles que nous avons utilisés.
 
        nous avons utilisés le capteurs de gaz 
 
-![MQ-6.jpeg](images%2FMQ-6.jpeg)
+![MQ-6.jpeg](images/MQ-6.jpeg)
 
 
    
@@ -199,11 +199,11 @@ dispersant sur la surface en feu
 
 voici le tuyeau d'eau utilisé 
 
-![tuyau.jpg](images%2Ftuyau.jpg)
+![tuyau.jpg](images/tuyau.jpg)
 
 voici le reservoir d'eau utilisé ici 
      
-![IMG_2295.JPG](images%2FIMG_2295.JPG)
+![IMG_2295.JPG](images/IMG_2295.JPG)
 
   
  * Programme de cette partie
