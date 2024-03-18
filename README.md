@@ -64,19 +64,21 @@ L'équipe a été scindé en trois parties :
 
 ### Réalisation du premier objectif: Déplacement du robot
 
-Pour assurer le déplacement du robot nous allons utiliser des servos débridés.
+Pour assurer le déplacement du robot nous allons utiliser des servos débridés.  
 Les etapes pour débryder sont :vérifier si le servomoteur fonctionne correctement, ouvrir le boîtier du servomoteur,
-ajuster la vitesse à 90° et téléverser le code, mettre en marche le servomoteur, ajuster
- le potentiomètre pour que le servomoteur ne tourne plus à 90°, et enfin, remonter
- le boîtier
+déconnecter le potentiomètre, ajuster la vitesse à 90° et téléverser le code, mettre en marche le servomoteur, ajuster
+le potentiomètre pour que le servomoteur ne tourne plus à 90°, et enfin, remonter
+le boîtier.  
 
-servomoteur avant d'être débryder 
-![servo.jpeg](images/servo.jpeg) 
+![servo_parties.png](images/servo_parties.png) 
 
-apres être débryder 
-
+Les servomoteurs ainsi débridés fonctionnent en rotation perpétuelle dans les 2 sens. Donc pour les angles compris 
+entre 0° et 89° ils tounent dans le sens horaire, pour les angles compris entre 91° et 180° ils tournent dans le sens 
+antihoraire et à 90°, ils s'arrêtent. Nous avons mis plus bas, un extrait du programme qui illustre l'utilisation de ces 
+angles.
 
 * Modélisation
+
 Le robot est constitué de deux étages imprimés en PLA:
 Le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
 de traction, les capteurs de flamme, le capteur ultrason et la battérie.  
@@ -89,13 +91,73 @@ le servomoteur pour pour le déplacement du jet d'eau.
 ![image.jpg](images/etage_2.jpg)
 
 
-     
-   * Programme
+* Programme  
+
+Voici un extrait du programme qui contient toutes les fonctions que nous utilisons pour assurer 
+les déplacements du robot.
+
+    #include <Servo.h> // librairie incluse pour la gestion des servos
+
+    // création des différents objets servos
+    Servo servo_G1; // servo gauche devant
+    Servo servo_G2; // servo gauche derrière
+    Servo servo_D1; // servo droit devant
+    Servo servo_D2; // servo droit derrière
+
+    void setup() { // liaison des servos aux broches de l'arduino
+      servo_G1.attach(3);
+      servo_G2.attach(5);
+      servo_D1.attach(6);
+      servo_D2.attach(9);
+    }
 
 
+    // les fonctions pour effectuer les différents mouvements
+    void avancer(){
+      // les 4 moteurs tournent vers l'avant
+      servo_G1.write(170);
+      servo_G2.write(170);
+      servo_D1.write(10);
+      servo_D2.write(10);
+    }
+    
+    void reculer(){
+      // les 4 tournent vers l'arrière
+      servo_G1.write(10);
+      servo_G2.write(10);
+      servo_D1.write(170);
+      servo_D2.write(170);
+    }
+    
+    void gauche(){
+      // on arrête le moteur avant gauche en laissant tourner les autres
+      servo_G1.write(90);
+      servo_G2.write(170);
+      servo_D1.write(10);
+      servo_D2.write(10);
+    }
+    
+    void droite(){
+      // on arrête le moteur avant droit en laissant tourner les autres
+      servo_G1.write(170);
+      servo_G2.write(170);
+      servo_D1.write(90);
+      servo_D2.write(10);
+    }
+    
+    void arret(){
+      // les 4 moteurs tournent vers l'avant
+      servo_G1.write(90);
+      servo_G2.write(90);
+      servo_D1.write(90);
+      servo_D2.write(90);
+    }
 
+Conformement aux intervals précédemment donnés, dans ce extrait, pour éviter un problème de blocage ou de manque de 
+vitesse, nous avons fait tourner chaque moteur à pleine vitesse avec une marge de 10° : on utilise donc 170° et 10° comme
+vitesses de rotation. Et à 90°, ils sont à l'arrêt. 
 
-   * sources
+* sources
 
 Une grande partie a été faite en se basant sur nos connaissances pour écrire 
 une bonne partie du code (en suivant notre propre logique) mais il faut préciser qu'a certains endroits, nous nous sommes inspirés et documentés en utilisant
