@@ -68,12 +68,15 @@ Pour assurer le déplacement du robot nous allons utiliser des servos débridés
 
 Le robot est constitué de deux étages imprimés en PLA:  
 
-le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
+Le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
 de traction, les capteurs de flamme, le capteur ultrason et la battérie.  
 
+![etage_1.jpg](images/etage_1.jpg)  
 
-![etage_1.jpg](images/etage_1.jpg)
+Le deuxième étage porte tout le système d'arrosage c'est-à-dire le réservoir d'eau, la pompe à eau, les tuyau ainsi que 
+le servomoteur pour pour le déplacement du jet d'eau.
 
+![etage_1.jpg](images/etage_2.jpg)
 
 
      
