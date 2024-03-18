@@ -71,8 +71,8 @@ Le robot est constitué de deux étages imprimés en PLA:
 le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
 de traction, les capteurs de flamme, le capteur ultrason et la battérie.  
 
-![]
-   
+![etage_1](images)
+
 
 
      
