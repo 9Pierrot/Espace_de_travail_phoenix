@@ -64,8 +64,15 @@ L'équipe a été scindé en trois parties :
 
 ### Réalisation du premier objectif: Déplacement du robot
 
-Pour assurer le déplacement du robot nous allons utiliser des servos débridés  
+Pour assurer le déplacement du robot nous allons utiliser des servos débridés.
+Les etapes pour débryder sont : vérifier si le servomoteur fonctionne correctement ; ouvrir le servomoteur ;
+ajuster la vitesse à 90° et téléverser le code ensuite mettre en marche le servomoteur , ajuster le potentiomètre pourqu'a 90°
+le servomoteur ne tourne plus et pour terminer on remonte le boitier  
 
+
+![servo.jpeg](images/servo.jpeg) 
+
+* Modélisation
 Le robot est constitué de deux étages imprimés en PLA:  
 
 Le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
@@ -76,23 +83,31 @@ de traction, les capteurs de flamme, le capteur ultrason et la battérie.
 Le deuxième étage porte tout le système d'arrosage c'est-à-dire le réservoir d'eau, la pompe à eau, les tuyau ainsi que 
 le servomoteur pour pour le déplacement du jet d'eau.
 
-![etage_1.jpg](images/etage_2.jpg)
+![image.jpg](images/etage_2.jpg)
 
 
      
    * Programme
 
-   * sources
+   * sources :
+
+       pour cette partie on s'est inspirer , documenter  de plusieurs code déja fait que nous avons trouver en ligne
+       voici quelle que liens des videos , modèle dont on s'est servit. 
+
+        
 
      
-   * Modélisation
 
      
    * Electronique 
   
 ### Détection de fumée et de flamme
 
-   * Pour assurer la detection de fumée et de flamme nous avons utilisés
+   * Pour assurer la detection de fumée et de flamme 
+
+       nous avons utilisés le capteurs de gaz 
+
+![MQ-6.jpeg](images%2FMQ-6.jpeg)
 
 
    
@@ -107,7 +122,14 @@ le servomoteur pour pour le déplacement du jet d'eau.
 
 ### système d'Extinction
 
- * Mécanisme pour éteinfre les flammes est 
+ * Mécanisme 
+
+     pour éteindre les flammes le robot se sert de l'eau qui sortira d'un tuyeau en la dispersant sur la surface 
+     en feu 
+
+![tuyau.jpg](images%2Ftuyau.jpg)
+     
+
 
   
  * Programme de cette partie
@@ -144,6 +166,11 @@ Vitesse : Jusqu’à plus de  12 km/h.
 Autonomie : plus de 22 km.
 Traction : 300 m de tuyau d’eau.
 Charge Utile : 800 kg.
+
+
+* Le robot **Phoenix** pour avoir une modifiaction au niveau du matériel avec lequelle on 
+a imprimer la carosorie utilser du métal à la place du PLA . Avoir une apparence beaucoup 
+plus esthétique .
 
 ### Sources et date de consultation
 
