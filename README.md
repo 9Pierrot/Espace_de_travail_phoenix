@@ -129,7 +129,7 @@ le servomoteur pour pour le déplacement du jet d'eau.
 
 ![tuyau.jpg](images%2Ftuyau.jpg)
      
-
+![IMG_2295.JPG](images%2FIMG_2295.JPG)
 
   
  * Programme de cette partie
