@@ -65,16 +65,19 @@ L'équipe a été scindé en trois parties :
 ### Réalisation du premier objectif: Déplacement du robot
 
 Pour assurer le déplacement du robot nous allons utiliser des servos débridés.
-Les etapes pour débryder sont : vérifier si le servomoteur fonctionne correctement ; ouvrir le servomoteur ;
-ajuster la vitesse à 90° et téléverser le code ensuite mettre en marche le servomoteur , ajuster le potentiomètre pourqu'a 90°
-le servomoteur ne tourne plus et pour terminer on remonte le boitier  
+Les etapes pour débryder sont :vérifier si le servomoteur fonctionne correctement, ouvrir le boîtier du servomoteur,
+ajuster la vitesse à 90° et téléverser le code, mettre en marche le servomoteur, ajuster
+ le potentiomètre pour que le servomoteur ne tourne plus à 90°, et enfin, remonter
+ le boîtier
 
-
+servomoteur avant d'être débryder 
 ![servo.jpeg](images/servo.jpeg) 
 
-* Modélisation
-Le robot est constitué de deux étages imprimés en PLA:  
+apres être débryder 
 
+
+* Modélisation
+Le robot est constitué de deux étages imprimés en PLA:
 Le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
 de traction, les capteurs de flamme, le capteur ultrason et la battérie.  
 
@@ -89,12 +92,17 @@ le servomoteur pour pour le déplacement du jet d'eau.
      
    * Programme
 
-   * sources :
 
-       pour cette partie on s'est inspirer , documenter  de plusieurs code déja fait que nous avons trouver en ligne
-       voici quelle que liens des videos , modèle dont on s'est servit. 
 
-        
+
+   * sources
+
+Une grande partie a été faite en se basant sur nos connaissances pour écrire 
+une bonne partie du code (en suivant notre propre logique) mais il faut préciser qu'a certains endroits, nous nous sommes inspirés et documentés en utilisant
+plusieurs codes déjà existants que nous avons trouvés en ligne. 
+Voici quelques liens vers des vidéos et des modèles que nous avons utilisés.
+
+
 
      
 
@@ -124,10 +132,14 @@ le servomoteur pour pour le déplacement du jet d'eau.
 
  * Mécanisme 
 
-     pour éteindre les flammes le robot se sert de l'eau qui sortira d'un tuyeau en la dispersant sur la surface 
-     en feu 
+     pour éteindre les flammes le robot se sert de l'eau qui sortira d'un tuyeau en la
+dispersant sur la surface en feu 
+
+voici le tuyeau d'eau utilisé 
 
 ![tuyau.jpg](images%2Ftuyau.jpg)
+
+voici le reservoir d'eau utilisé ici 
      
 ![IMG_2295.JPG](images%2FIMG_2295.JPG)
 
@@ -136,8 +148,17 @@ le servomoteur pour pour le déplacement du jet d'eau.
    
  * Electronique
 
+dans cette partie nous présentons la façon dont le montage a été fait 
+
+
    
 ### Test des trois premiers objectifs 
+
+ * premier test 
+avec ce premier test nous avons vérifier si le capteur de gaz fonctionne 
+et si le système d'extinction fonctionne 
+
+ video 
 
 
 
