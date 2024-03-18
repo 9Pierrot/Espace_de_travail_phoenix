@@ -64,7 +64,14 @@ L'équipe a été scindé en trois parties :
 
 ### Réalisation du premier objectif: Déplacement du robot
 
-Pour assurer le déplacement du robot nous allons utiliser des servos débridés
+Pour assurer le déplacement du robot nous allons utiliser des servos débridés  
+
+Le robot est constitué de deux étages imprimés en PLA:  
+
+le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
+de traction, les capteurs de flamme, le capteur ultrason et la battérie.  
+
+![]
    
 
 
