@@ -83,12 +83,12 @@ Le robot est constitué de deux étages imprimés en PLA:
 Le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
 de traction, les capteurs de flamme, le capteur ultrason et la battérie.  
 
-![etage_1.jpg](images/etage_1.jpg)  
+![etage_1(1).png](images/etage_1(1).png)  
 
 Le deuxième étage porte tout le système d'arrosage c'est-à-dire le réservoir d'eau, la pompe à eau, les tuyau ainsi que 
 le servomoteur pour pour le déplacement du jet d'eau.
 
-![image.jpg](images/etage_2.jpg)
+![etage_2(1).png](images%2Fetage_2(1).png)
 
 
 * Programme  
