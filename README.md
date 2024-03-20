@@ -21,11 +21,11 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 
 ## Introduction
 
-Phoenix est une robot d'instinction de feu d'incendie destiné à acompagner les sapeurs pompiers et à les aider à être 
+Phoenix est un robot d'extinction de feu d'incendie destiné à accompagner les sapeurs-pompiers et à les aider à être 
 plus efficaces dans leurs missions de sauvetage. 
 Les incendies sont des catastrophes imprévisibles qui exigent des interventions rapides et éfficaces. C’est là que 
-notre mini robot pompier **Phoenix** entre en scène. Intelligent, ce petit héros mécanique est conçu pour assister et 
-aider les pompiers dans leur activités quotidiennes.
+notre minirobot pompier **Phoenix** entre en scène. Intelligent, ce petit héros mécanique est conçu pour assister et 
+aider les pompiers dans leurs activités quotidiennes.
 
 
 ## OBJECTIFS DU PROJETS 
@@ -62,10 +62,10 @@ L'équipe a été scindé en trois parties :
 | Tuyau d’eau                 |      1       |
 | Réservoir d’eau             |      1       |
 
-### Réalisation du premier objectif: Déplacement du robot
+### Réalisation du premier objectif : Déplacement du robot
 
-Pour assurer le déplacement du robot nous allons utiliser des servos débridés.  
-Les etapes pour débryder sont :vérifier si le servomoteur fonctionne correctement, ouvrir le boîtier du servomoteur,
+Pour assurer le déplacement du robot, nous allons utiliser des servos débridés.  
+Les étapes pour débrider sont :vérifier si le servomoteur fonctionne correctement, ouvrir le boîtier du servomoteur,
 déconnecter le potentiomètre, ajuster la vitesse à 90° et téléverser le code, mettre en marche le servomoteur, ajuster
 le potentiomètre pour que le servomoteur ne tourne plus à 90°, et enfin, remonter
 le boîtier.  
@@ -85,8 +85,8 @@ de traction, les capteurs de flamme, le capteur ultrason et la battérie.
 
 ![etage_1(1).png](images/etage_1(1).png)  
 
-Le deuxième étage porte tout le système d'arrosage c'est-à-dire le réservoir d'eau, la pompe à eau, les tuyau ainsi que 
-le servomoteur pour pour le déplacement du jet d'eau.
+Le deuxième étage porte tout le système d'arrosage, c'est-à-dire le réservoir d'eau, la pompe à eau, le tuyau ainsi que 
+le servomoteur pour le déplacement du jet d'eau.
 
 ![etage_2(1).png](images%2Fetage_2(1).png)
 
@@ -165,11 +165,16 @@ Pour ce qui est du contrôle des servo et du code, nous sommes basé sur une log
 **Hobby Project** : https://drive.google.com/drive/u/0/folders/1hj5Dn0m3uD9UZSHQwB2p8elB4GVzE0zX
 
      
-   * Electronique 
+* Electronique 
+
+Voici le premier montage concernant les moteurs :
+
+
   
 ### Détection de fumée et de flamme
 
-Pour assurer la detection des flammes, nous utilisons 3 capteurs de flamme standards :  
+Pour assurer la detection des flammes, nous utilisons 3 capteurs de flamme standards placés à l'avant du dispositif :
+l'un au milieu, un autre à sa gauche et le dernier à droite.
 
 ![capteur_de_flamme.png](images/capteur_de_flamme.png) 
 
@@ -182,6 +187,8 @@ Cependant, nous n'avons pas encore trouvé le datasheet pouvant nous donner des 
 
 * Programme   
 
+Voici l'extrait du programme qui concerne les capteurs de flamme.
+
       /* les broches des capteurs de flamme sont connectées ainsi :
       le capteur du milieu est connecté à la broche A0, celui de gauche à A1 
       et celui de droite à A2
@@ -192,7 +199,6 @@ Cependant, nous n'avons pas encore trouvé le datasheet pouvant nous donner des 
       int c_gauche; 
       int c_droit; 
 
-      
 
       void loop(){
         c_milieu = digitalRead(A0);// valeur lue au niveau du capteur du milieu
@@ -219,14 +225,29 @@ Cependant, nous n'avons pas encore trouvé le datasheet pouvant nous donner des 
         }
         
       }
-     
-* sources
-Pour son utiliser ce capteur, nous nous sommes inspiré du cours dans le document : **Arduino_En_pratique_Avec_10_Leçons**
-De _Khalid LAFKIH_
 
+**Explication de l'extrait**  
+
+Selon **Arduino_En_pratique_Avec_10_Leçons**, le phototransistor fonctionne comme un transistor standard, mais au lieu 
+d'être activé et désactivé avec une tension de polarisation typique et une source de courant à sa borne de base, 
+la base est régulée par l'intensité de la lumière IR émise par les flammes. Ainsi, plus l'intensité de la flamme est élevée, 
+plus le courant d'émetteur est élevée et donc la tension aux bornes de la résistance pull down augmente. C'est cette tension
+que nous mesurons.  
+Chacune des mesures c_milieu, c_gauche et c_droit correspond à la tension présente aux bornes de la résistance pull down 
+correspondante respectivement aux capteurs placés au milieu, à gauche et à droite. Ainsi, si l'une de ces valeurs est 
+supérieure à zéro, une flamme est alors détectée : le dispositif se déplace donc dans en direction de la flamme.
+
+* Sources  
+
+Pour utiliser ce capteur, nous nous sommes inspiré du cours dans le document : **Arduino_En_pratique_Avec_10_Leçons**
+De _Khalid LAFKIH_
 [Arduino_En_pratique_Avec_10_Leçons.pdf](sources/Arduino_En_pratique_Avec_10_Lecons.pdf)
      
-   * Electronique 
+
+  
+* Electronique  
+
+![circuit_servo.png](images/circuit_servo.png)
 
 
 ### Système d'extinction
