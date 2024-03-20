@@ -153,44 +153,83 @@ les déplacements du robot.
       servo_D2.write(90);
     }
 
-Conformement aux intervals précédemment donnés, dans ce extrait, pour éviter un problème de blocage ou de manque de 
+Conformément aux intervals précédemment donnés, dans cet extrait, pour éviter un problème de blocage ou de manque de 
 vitesse, nous avons fait tourner chaque moteur à pleine vitesse avec une marge de 10° : on utilise donc 170° et 10° comme
 vitesses de rotation. Et à 90°, ils sont à l'arrêt. 
 
 * sources
 
-Une grande partie a été faite en se basant sur nos connaissances pour écrire 
-une bonne partie du code (en suivant notre propre logique) mais il faut préciser qu'a certains endroits, nous nous sommes inspirés et documentés en utilisant
-plusieurs codes déjà existants que nous avons trouvés en ligne. 
-Voici quelques liens vers des vidéos et des modèles que nous avons utilisés.
-
-
-
-     
+Pour cette partie, surtout pour débrider les servos, nous avons suivi les conseils et la méthode qui nous a été proposée 
+à la formation du samedi 16 mars dans le cadre du boot camp Arduino Day.  
+Pour ce qui est du contrôle des servo et du code, nous sommes basé sur une logique exploitée sur la chaine youtube :
+**Hobby Project** : https://drive.google.com/drive/u/0/folders/1hj5Dn0m3uD9UZSHQwB2p8elB4GVzE0zX
 
      
    * Electronique 
   
 ### Détection de fumée et de flamme
 
-   * Pour assurer la detection de fumée et de flamme 
+Pour assurer la detection des flammes, nous utilisons 3 capteurs de flamme standards :  
 
-       nous avons utilisés le capteurs de gaz 
+![capteur_de_flamme.png](images/capteur_de_flamme.png) 
+
+Contrairement à la plupart des capteurs de flammes comme le KY-026 équipés d'une plaquette électronique portant 
+un potentiomètre permettant de régler la sensibilité, ceux-ci sont uniquement constitués de phototransistors.
+Cependant, nous n'avons pas encore trouvé le datasheet pouvant nous donner des précisions sur sa précision. 
 
 ![MQ-6.jpeg](images/MQ-6.jpeg)
 
 
-   
-   * Programme
+* Programme   
 
+      /* les broches des capteurs de flamme sont connectées ainsi :
+      le capteur du milieu est connecté à la broche A0, celui de gauche à A1 
+      et celui de droite à A2
+      */
+      
+      
+      int c_milieu; 
+      int c_gauche; 
+      int c_droit; 
+
+      
+
+      void loop(){
+        c_milieu = digitalRead(A0);// valeur lue au niveau du capteur du milieu
+        c_gauche = digitalRead(A1);// valeur lue au niveau du capteur de gauche
+        c_droit = digitalRead(A2); // valeur lue au niveau du capteur de droite
+      
+        if (c_milieu == 0 && c_gauche == 0 && c_droit == 0){
+          arret();
+        }
+        else if (c_milieu > 0){
+          avancer();
+        }
+        else if (c_gauche < 0){
+          gauche();
+        }
+        else if (c_droit > 0){
+          droite();
+        }
+      
+        delay(2000);
+      
+        while(c_milieu > 0){
+          arrosage();
+        }
+        
+      }
      
-   * sources
+* sources
+Pour son utiliser ce capteur, nous nous sommes inspiré du cours dans le document : **Arduino_En_pratique_Avec_10_Leçons**
+De _Khalid LAFKIH_
 
+[Arduino_En_pratique_Avec_10_Leçons.pdf](sources/Arduino_En_pratique_Avec_10_Lecons.pdf)
      
    * Electronique 
 
 
-### système d'Extinction
+### Système d'extinction
 
  * Mécanisme 
 
