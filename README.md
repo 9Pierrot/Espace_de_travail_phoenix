@@ -14,7 +14,7 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 4. Detection de flamme et de fumée
 5. Système d'extinction
 6. Transfert de données vidéos 
-7. Sécurité et précaution ( comment utiliser le robot / le faire fonctionner)
+7. Sécurité et précaution (comment utiliser le robot / le faire fonctionner)
 8. Perspectives d'Amélioration
 9. sources et Date de consultation
 10. conclusion 
@@ -65,7 +65,7 @@ L'équipe a été scindé en trois parties :
 ### Réalisation du premier objectif : Déplacement du robot
 
 Pour assurer le déplacement du robot, nous allons utiliser des servos débridés.  
-Les étapes pour débrider sont :vérifier si le servomoteur fonctionne correctement, ouvrir le boîtier du servomoteur,
+Les étapes pour débrider sont : vérifier si le servomoteur fonctionne correctement, ouvrir le boîtier du servomoteur,
 déconnecter le potentiomètre, ajuster la vitesse à 90° et téléverser le code, mettre en marche le servomoteur, ajuster
 le potentiomètre pour que le servomoteur ne tourne plus à 90°, et enfin, remonter
 le boîtier.  
@@ -73,13 +73,13 @@ le boîtier.
 ![servo_parties.png](images/servo_parties.png) 
 
 Les servomoteurs ainsi débridés fonctionnent en rotation perpétuelle dans les 2 sens. Donc pour les angles compris 
-entre 0° et 89° ils tounent dans le sens horaire, pour les angles compris entre 91° et 180° ils tournent dans le sens 
+entre 0° et 89° ils tournent dans le sens horaire, pour les angles compris entre 91° et 180° ils tournent dans le sens 
 antihoraire et à 90°, ils s'arrêtent. Nous avons mis plus bas, un extrait du programme qui illustre l'utilisation de ces 
 angles.
 
 * Modélisation
 
-Le robot est constitué de deux étages imprimés en PLA:
+Le robot est constitué de deux étages imprimés en PLA :
 Le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
 de traction, les capteurs de flamme, le capteur ultrason et la battérie.  
 
@@ -257,11 +257,11 @@ De _Khalid LAFKIH_
      pour éteindre les flammes le robot se sert de l'eau qui sortira d'un tuyeau en la
 dispersant sur la surface en feu 
 
-voici le tuyeau d'eau utilisé 
+Voici le tuyau d'eau utilisé 
 
 ![tuyau.jpg](images/tuyau.jpg)
 
-voici le reservoir d'eau utilisé ici 
+Voici le reservoir d'eau utilisé ici 
      
 ![IMG_2295.JPG](images/IMG_2295.JPG)
 
@@ -270,7 +270,7 @@ voici le reservoir d'eau utilisé ici
    
  * Electronique
 
-dans cette partie nous présentons la façon dont le montage a été fait 
+Dans cette partie, nous présentons la façon dont le montage a été fait 
 
 
    
@@ -287,7 +287,7 @@ et si le système d'extinction fonctionne
 ### Transfert de données video
 
 
-### Sécurité et Précaution ( comment utiliser le robot \ le faire fonctionner)
+### Sécurité et Précaution (comment utiliser le robot \ le faire fonctionner)
 
 * Mode d'utilisation
   
@@ -296,24 +296,24 @@ et si le système d'extinction fonctionne
 
 ### Perspectives d'Amélioration
 
-* Le robot **Phoenix** pourrait etre améliorer en pouvant pénétrer dans des environnements à haut risque tels que les 
+* Le robot **Phoenix** pourrait être amélioré en pouvant pénétrer dans des environnements à haut risque tels que les 
 tunnels, les parkings souterrains, les sites industriels et les raffineries. Équipé d’un jet d’eau diffusant, il peut 
-se protéger de la chaleur intense.Doté d’un porte-brancard, le  **Phoenix** pourrait  assiste les pompiers en facilitant 
-l’évacuation des blessés. Dans des conditions de visibilité réduite, il deviendra leur précieux allié.Le plateau 
-technique de  **Phoenix**  peut etre améliorer de façon à  accueillir une cage à outils ou des sangles, permettant le 
+se protéger de la chaleur intense. Doté d’un porte-brancard, le **Phoenix** pourrait assister les pompiers en facilitant 
+l’évacuation des blessés. Dans des conditions de visibilité réduite, il deviendra leur précieux allié. Le plateau 
+technique de **Phoenix** peut être amélioré de façon à accueillir une cage à outils ou des sangles, permettant le 
 * transport de matériel lourd sur le terrain.
 
 
 * Des Performances Impressionnantes comme la 
-Vitesse : Jusqu’à plus de  12 km/h.
+Vitesse : Jusqu’à plus de 12 km/h.
 Autonomie : plus de 22 km.
 Traction : 300 m de tuyau d’eau.
 Charge Utile : 800 kg.
 
 
-* Le robot **Phoenix** pour avoir une modifiaction au niveau du matériel avec lequelle on 
-a imprimer la carosorie utilser du métal à la place du PLA . Avoir une apparence beaucoup 
-plus esthétique .
+* Le robot **Phoenix** pour avoir une modification au niveau du matériel avec lequel on 
+a imprimé la carrosserie utilise du métal à la place du PLA. Avoir une apparence beaucoup 
+plus esthétique.
 
 ### Sources et date de consultation
 
