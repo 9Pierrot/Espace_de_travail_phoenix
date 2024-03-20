@@ -169,7 +169,7 @@ Pour ce qui est du contrôle des servo et du code, nous sommes basé sur une log
 
 Voici le premier montage concernant les moteurs :
 
-
+![circuit_servo.png](images/circuit_servo.png)
   
 ### Détection de fumée et de flamme
 
@@ -247,7 +247,7 @@ De _Khalid LAFKIH_
   
 * Electronique  
 
-![circuit_servo.png](images/circuit_servo.png)
+
 
 
 ### Système d'extinction
