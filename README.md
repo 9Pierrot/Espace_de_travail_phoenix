@@ -327,3 +327,15 @@ plus esthétique.
 ### Conclusion 
 
 
+### Remerciemment 
+
+M. Sylvestre OLANLO
+
+M. Giovanni KAMEKPO
+
+M. Josaphat BANKAÏ
+
+M. Justin HANKEM
+
+Lycée International cours-lumière
+
