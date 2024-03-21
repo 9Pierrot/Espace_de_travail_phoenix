@@ -91,6 +91,10 @@ le servomoteur pour le déplacement du jet d'eau.
 ![etage_2(1).png](images/etage_2(1).png)
 
 
+rendue aprés impression
+![20240321_172733](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/986bbade-984e-4528-8c53-804ea7cc4c49)
+
+
 * Programme  
 
 Voici un extrait du programme qui contient toutes les fonctions que nous utilisons pour assurer 
