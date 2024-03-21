@@ -282,8 +282,6 @@ et si le système d'extinction fonctionne
  video 
  
 
-
-
 ### Transfert de données video
 
 
