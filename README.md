@@ -245,6 +245,7 @@ supérieure à zéro, une flamme est alors détectée : le dispositif se déplac
 Pour utiliser ce capteur, nous nous sommes inspiré du cours dans le document : **Arduino_En_pratique_Avec_10_Leçons**
 De _Khalid LAFKIH_
 [Arduino_En_pratique_Avec_10_Leçons.pdf](sources/Arduino_En_pratique_Avec_10_Lecons.pdf)
+il faut noter que ce document nous l' avons consulter à plusieurs reprises tout au long du projet  
      
 
   
