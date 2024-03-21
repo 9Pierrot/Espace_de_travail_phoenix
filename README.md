@@ -88,7 +88,7 @@ de traction, les capteurs de flamme, le capteur ultrason et la battérie.
 Le deuxième étage porte tout le système d'arrosage, c'est-à-dire le réservoir d'eau, la pompe à eau, le tuyau ainsi que 
 le servomoteur pour le déplacement du jet d'eau.
 
-![etage_2(1).png](images%2Fetage_2(1).png)
+![etage_2(1).png](images/etage_2(1).png)
 
 
 * Programme  
@@ -182,7 +182,6 @@ Contrairement à la plupart des capteurs de flammes comme le KY-026 équipés d'
 un potentiomètre permettant de régler la sensibilité, ceux-ci sont uniquement constitués de phototransistors.
 Cependant, nous n'avons pas encore trouvé le datasheet pouvant nous donner des précisions sur sa précision. 
 
-![MQ-6.jpeg](images/MQ-6.jpeg)
 
 
 * Programme   
