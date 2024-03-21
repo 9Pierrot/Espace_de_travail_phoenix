@@ -280,7 +280,7 @@ avec ce premier test nous avons vérifier si le capteur de gaz fonctionne
 et si le système d'extinction fonctionne 
 
  video 
-![test_1.mov](video/test_1.mov)
+![test_1.mp4](video/test_1.mp4)
 
 ### Transfert de données video
 
