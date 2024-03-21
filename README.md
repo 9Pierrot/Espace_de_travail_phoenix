@@ -280,7 +280,8 @@ avec ce premier test nous avons vérifier si le capteur de gaz fonctionne
 et si le système d'extinction fonctionne 
 
  video 
-![test_1.mp4](video/test_1.mp4)
+
+https://youtube.com/shorts/M2Zzv10cfd4?feature=share
 
 ### Transfert de données video
 
