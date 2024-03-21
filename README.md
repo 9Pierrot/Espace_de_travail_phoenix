@@ -160,7 +160,7 @@ vitesses de rotation. Et à 90°, ils sont à l'arrêt.
 * sources
 
 Pour cette partie, surtout pour débrider les servos, nous avons suivi les conseils et la méthode qui nous a été proposée 
-à la formation du samedi 16 mars dans le cadre du boot camp Arduino Day.  
+à la formation du samedi 16 mars 2024 dans le cadre du boot camp Arduino Day.  
 Pour ce qui est du contrôle des servo et du code, nous sommes basé sur une logique exploitée sur la chaine youtube :
 **Hobby Project** : https://drive.google.com/drive/u/0/folders/1hj5Dn0m3uD9UZSHQwB2p8elB4GVzE0zX
 
@@ -280,6 +280,7 @@ avec ce premier test nous avons vérifier si le capteur de gaz fonctionne
 et si le système d'extinction fonctionne 
 
  video 
+ 
 
 
 
