@@ -7,6 +7,11 @@ tels que le feu. En raison de cette symbolique, le phénix est parfois utilisé 
 la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 
 
+### Remerciment
+
+Nous souhaitons exprimer notre profonde gratitude envers toutes les personnes qui ont contribué au succès de notre projet Phoenix. En particulier, nous remercions chaleureusement notre encadreur, M. Justin HANKEM, pour ses précieux conseils et son suivi attentif. Nos collaborateurs, ainsi que les experts M. Sylvestre OLANLO ; M. Giovanni KAMEKPO ; M. Josaphat BANKAÏ qui ont partagé leur savoir-faire et leurs connaissances avec nous, méritent également nos remerciements. Enfin, nous sommes reconnaissants envers nos responsables administratifs qui ont constamment soutenu et accompagné notre réussite.
+
+
 ## Sommaire
 1. Introduction
 2. Objectifs du projet 
@@ -37,7 +42,6 @@ Le système doit pouvoir :
 * Transmettre une capture vidéo à un téléphone mobile
 
 ## CONCEPTION ET MECANISMES
-
 
 ### Etapes du travail
 
@@ -327,15 +331,5 @@ plus esthétique.
 ### Conclusion 
 
 
-### Remerciemment 
 
-M. Sylvestre OLANLO
-
-M. Giovanni KAMEKPO
-
-M. Josaphat BANKAÏ
-
-M. Justin HANKEM
-
-Lycée International cours-lumière
 
