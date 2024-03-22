@@ -95,9 +95,20 @@ le servomoteur pour le déplacement du jet d'eau.
 ![etage_2(1).png](images/etage_2(1).png)
 
 
-rendue aprés impression
+rendue aprés impression 
+
 ![20240321_172733](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/986bbade-984e-4528-8c53-804ea7cc4c49)
 
+images des modélisations
+
+![WhatsApp Image 2024-03-22 at 17 14 55](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/cea6c0df-5114-4baf-9146-a7f26d31de3d)
+
+![WhatsApp Image 2024-03-22 at 17 14 54](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/c63d95f3-1710-4d19-9919-dbe76d13a75f)
+
+![WhatsApp Image 2024-03-22 at 17 14 53 (1)](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/0c53bbb9-846a-4df7-9674-1a4984f14248)
+
+
+![WhatsApp Image 2024-03-22 at 17 14 53](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/7ce5256e-d3e6-49d1-b5e2-2dd641fee042)
 
 * Programme  
 
@@ -273,7 +284,8 @@ Voici le reservoir d'eau utilisé ici
      
 ![IMG_2295.JPG](images/IMG_2295.JPG)
 
-  
+images des modélisations
+
  * Programme de cette partie
    
  * Electronique
