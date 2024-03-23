@@ -1,4 +1,7 @@
 # Phoenix
+
+
+![fin.jpg](images%2Ffin.jpg)
 ## À propos du projet
 
 Dans la mythologie, le phénix est un oiseau légendaire qui est capable de renaître de ses cendres après avoir été consumé par le feu. 
