@@ -243,7 +243,9 @@ l'un au milieu, un autre à sa gauche et le dernier à droite.
 
 ![capteur_de_flamme.png](images/capteur_de_flamme.png)
  
+* Capteur de gaz
 
+![MQ-6](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/e5f14845-162b-4aae-8634-573b7147ac33)
 
 
 * Programme   
