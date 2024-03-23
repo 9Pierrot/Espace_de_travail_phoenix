@@ -119,7 +119,8 @@ Vue de derrière :
 
 Vue en perspective:
 
-![dispositif_vue_angle.jpg](images/dispositif_vue_angle.jpg)  
+![WhatsApp Image 2024-03-23 at 15 03 32](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/379e177f-0fd1-46bf-8517-c8efaafd25c0)
+
 
 
 ### 3.3. Analyse électrique 
