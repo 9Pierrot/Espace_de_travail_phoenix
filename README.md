@@ -324,7 +324,8 @@ Voici le tuyau d'eau utilisé
 
 Voici le reservoir d'eau utilisé ici 
      
-![IMG_2295.JPG](images/IMG_2295.JPG)
+![IMG_2295 (1) (1)](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/7d8060ee-b6a6-4987-822c-0c424c4e5c23)
+
 
 image de la pompe utiliser
 
