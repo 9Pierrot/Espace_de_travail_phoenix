@@ -23,7 +23,7 @@ Nous souhaitons exprimer notre profonde gratitude envers toutes les personnes qu
 Phoenix est un robot d'extinction de feu d'incendie destiné à accompagner les sapeurs-pompiers et à les aider à être 
 plus efficaces dans leurs missions de sauvetage. 
 Les incendies sont des catastrophes imprévisibles qui exigent des interventions rapides et éfficaces. C’est là que 
-notre minirobot pompier **Phoenix** entre en scène. Intelligent, ce petit héros mécanique est conçu pour assister et 
+notre mini robot pompier **Phoenix** entre en scène. Intelligent, ce petit héros mécanique est conçu pour assister et 
 aider les pompiers dans leurs activités quotidiennes.
 
 **OBJECTIFS DU PROJETS**  
