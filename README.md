@@ -327,6 +327,9 @@ Voici le reservoir d'eau utilisé ici
      
 ![IMG_2295.JPG](images/IMG_2295.JPG)
 
+image de la pompe utiliser
+
+![pompe à eau](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/e9bae84c-74ed-401b-bd64-763705ce4dde)
 
 
  * Programme de cette partie
