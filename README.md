@@ -39,14 +39,14 @@ Le système doit pouvoir :
 | Fonctions | Rôle                                                           | Critères            | Niveau d'exigence |
 |-----------|----------------------------------------------------------------|---------------------|-------------------|
 | FP1       | Doit pouvoir détecter les flammes et la fumée                  | Détection de flamme | A 1m|
-| FP2       | Doit pouvoir éteindre les flammes                              | Emition d'eau       |     |
+| FP2       | Doit pouvoir éteindre les flammes                              | Emission d'eau       |A 10cm|
 | FP3       | Doit pouvoir se déplacer de façon autonome                     | Déplacement         |     |
 | FP4       | Doit pouvoir éviter les obstacles                              |                     |     |
-| FP5       | Doit pouvoir envoier une capture vidéo                         |                     |     |
+| FP5       | Doit pouvoir envoyer une capture vidéo                         | Transmission d'image|
 |           |                                                                |                     |     |
 | FS1       | Doit pouvoir résister aux températures élevées                 |                     |     |
-| FS2       | Doit pouvoir émettre un son à la détection de fumée            |                     |     |
-| FS3       | Doit pouvoir émettre de la lumière à la détection d'une flamme |                     |     |
+| FS2       | Doit pouvoir émettre un son à la détection de fumée            | Emission de son     |     |
+| FS3       | Doit pouvoir émettre de la lumière à la détection d'une flamme | Emission de lumiére |     |
 
 
 
@@ -368,8 +368,9 @@ se protéger de la chaleur intense. Doté d’un porte-brancard, le **Phoenix** 
 l’évacuation des blessés. Dans des conditions de visibilité réduite, il deviendra leur précieux allié. Le plateau 
 technique de **Phoenix** peut être amélioré de façon à accueillir une cage à outils ou des sangles, permettant le 
 * transport de matériel lourd sur le terrain.
-
-
+  
+* Assistance respiratoire : Il pourrait être équipé d’un système qui fourni de l’oxygène pour aider les victimes à respirer.
+  
 * Des Performances Impressionnantes comme la 
 Vitesse : Jusqu’à plus de 12 km/h.
 Autonomie : plus de 22 km.
