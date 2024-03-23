@@ -241,7 +241,8 @@ Pour ce qui est du contrôle des servo et du code, nous sommes basé sur une log
 Pour assurer la detection des flammes, nous utilisons 3 capteurs de flamme standards placés à l'avant du dispositif :
 l'un au milieu, un autre à sa gauche et le dernier à droite.
 
-![capteur_de_flamme.png](images/capteur_de_flamme.png)
+* Capteur de flamme
+  
  
 * Capteur de gaz
 
