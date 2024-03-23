@@ -9,7 +9,7 @@ la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 
 ### Remerciement
 
-Nous souhaitons exprimer notre profonde gratitude envers toutes les personnes qui ont contribué au succès de notre projet Phoenix. En particulier, nous remercions chaleureusement notre encadreur, M. Justin HANKEM, pour ses précieux conseils et son suivi attentif. Nos collaborateurs, ainsi que les experts M. Sylvestre OLANLO ; M. Giovanni KAMEKPO ; M. Josaphat BANKAÏ qui ont partagé leur savoir-faire et leurs connaissances avec nous, méritent également nos remerciements. Enfin, nous sommes reconnaissants envers nos responsables administratifs qui ont constamment soutenu et accompagné notre réussite.
+Nous souhaitons exprimer notre profonde gratitude envers toutes les personnes qui ont contribué au succès de notre projet **Phoenix**. En particulier, nous remercions chaleureusement notre encadreur, M. Justin HANKEM, pour ses précieux conseils et son suivi attentif. Nos collaborateurs, ainsi que les experts M. Sylvestre OLANLO qui est le PCA de **TIDD** qui organise **arduino days** au sein du **lycée international Cours lumière** ; M. Giovanni KAMEKPO qui est le président de **TIDD** au Togo ; M. Josaphat BANKAÏ qui est le responsable du fablab **TIDD** qui ont partagé leur savoir-faire et leurs connaissances avec nous, méritent également nos remerciements. Enfin, nous sommes reconnaissants envers nos responsables administratifs qui ont constamment soutenu et accompagné notre réussite.
 
 
 ## Sommaire
@@ -40,13 +40,13 @@ Le système doit pouvoir :
 |-----------|----------------------------------------------------------------|---------------------|-------------------|
 | FP1       | Doit pouvoir détecter les flammes et la fumée                  | Détection de flamme | A 1m|
 | FP2       | Doit pouvoir éteindre les flammes                              | Emission d'eau       |A 10cm|
-| FP3       | Doit pouvoir se déplacer de façon autonome                     | Déplacement         |     |
+| FP3       | Doit pouvoir se déplacer de façon autonome                     | Vitesse et adhérence | Reste dans la zone si il y a un mur |
 | FP4       | Doit pouvoir éviter les obstacles                              |                     |     |
-| FP5       | Doit pouvoir envoyer une capture vidéo                         | Transmission d'image|
+| FP5       | Doit pouvoir envoyer une capture vidéo                         | Transmission d'image|On doit pouvoir voir l'état de la piéce
 |           |                                                                |                     |     |
 | FS1       | Doit pouvoir résister aux températures élevées                 |                     |     |
-| FS2       | Doit pouvoir émettre un son à la détection de fumée            | Emission de son     |     |
-| FS3       | Doit pouvoir émettre de la lumière à la détection d'une flamme | Emission de lumiére |     |
+| FS2       | Doit pouvoir émettre un son à la détection de fumée            | Diffussion de son   |     |
+| FS3       | Doit pouvoir émettre de la lumière à la détection d'une flamme |                           |      
 
 
 
@@ -309,7 +309,7 @@ il faut noter que ce document, nous l'avons consulté à plusieurs reprises tout
   
 * Electronique  
 
-
+![WhatsApp Image 2024-03-23 at 12 02 24](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/69ee59a7-b636-43ba-b39f-9440fa7c0e71)
 
 
 ### Système d'extinction
@@ -335,6 +335,9 @@ image de la pompe utiliser
  * Programme de cette partie
    
  * Electronique
+   
+![WhatsApp Image 2024-03-23 at 12 02 24](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/69ee59a7-b636-43ba-b39f-9440fa7c0e71)
+
 
 Dans cette partie, nous présentons la façon dont le montage a été fait 
 
