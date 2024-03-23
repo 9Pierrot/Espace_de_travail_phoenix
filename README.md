@@ -320,7 +320,7 @@ dispersant sur la surface en feu
 
 Voici le tuyau d'eau utilisé 
 
-![tuyau.jpg](images/tuyau.jpg)
+![tuyau](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/b87f2c86-555d-4623-9c42-22fccb1589fa)
 
 Voici le reservoir d'eau utilisé ici 
      
