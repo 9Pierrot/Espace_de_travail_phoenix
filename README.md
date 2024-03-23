@@ -327,7 +327,7 @@ Voici le reservoir d'eau utilisé ici
      
 ![IMG_2295.JPG](images/IMG_2295.JPG)
 
-Images des modélisations
+
 
  * Programme de cette partie
    
