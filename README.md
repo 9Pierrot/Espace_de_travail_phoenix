@@ -7,24 +7,18 @@ tels que le feu. En raison de cette symbolique, le phénix est parfois utilisé 
 la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 
 
-### Remerciment
+### Remerciement
 
 Nous souhaitons exprimer notre profonde gratitude envers toutes les personnes qui ont contribué au succès de notre projet Phoenix. En particulier, nous remercions chaleureusement notre encadreur, M. Justin HANKEM, pour ses précieux conseils et son suivi attentif. Nos collaborateurs, ainsi que les experts M. Sylvestre OLANLO ; M. Giovanni KAMEKPO ; M. Josaphat BANKAÏ qui ont partagé leur savoir-faire et leurs connaissances avec nous, méritent également nos remerciements. Enfin, nous sommes reconnaissants envers nos responsables administratifs qui ont constamment soutenu et accompagné notre réussite.
 
 
 ## Sommaire
-1. Introduction
-2. Objectifs du projet 
-3. Conception et mécanisme 
-4. Detection de flamme et de fumée
-5. Système d'extinction
-6. Transfert de données vidéos 
-7. Sécurité et précaution (comment utiliser le robot / le faire fonctionner)
-8. Perspectives d'Amélioration
-9. sources et Date de consultation
-10. conclusion 
+1. Introduction et objectifs du projet 
+2. Analyse fonctionnelle  
+3. Analyse technique
+4. Evolution du projet
 
-## Introduction
+## 1. Introduction et objectifs du projet
 
 Phoenix est un robot d'extinction de feu d'incendie destiné à accompagner les sapeurs-pompiers et à les aider à être 
 plus efficaces dans leurs missions de sauvetage. 
@@ -32,8 +26,8 @@ Les incendies sont des catastrophes imprévisibles qui exigent des interventions
 notre minirobot pompier **Phoenix** entre en scène. Intelligent, ce petit héros mécanique est conçu pour assister et 
 aider les pompiers dans leurs activités quotidiennes.
 
+**OBJECTIFS DU PROJETS**  
 
-## OBJECTIFS DU PROJETS 
 Le système doit pouvoir :
 * Se déplacer de façon autonome
 * Détecter les flammes et la fumée
@@ -41,74 +35,128 @@ Le système doit pouvoir :
 * Éviter les obstacles
 * Transmettre une capture vidéo à un téléphone mobile
 
-## CONCEPTION ET MECANISMES
+## 2. Analyse fonctionnelle
+| Fonctions | Rôle                                                           | Critères            | Niveau d'exigence |
+|-----------|----------------------------------------------------------------|---------------------|-------------------|
+| FP1       | Doit pouvoir détecter les flammes et la fumée                  | Détection de flamme | A 1m|
+| FP2       | Doit pouvoir éteindre les flammes                              | Emition d'eau       |     |
+| FP3       | Doit pouvoir se déplacer de façon autonome                     | Déplacement         |     |
+| FP4       | Doit pouvoir éviter les obstacles                              |                     |     |
+| FP5       | Doit pouvoir envoier une capture vidéo                         |                     |     |
+|           |                                                                |                     |     |
+| FS1       | Doit pouvoir résister aux températures élevées                 |                     |     |
+| FS2       | Doit pouvoir émettre un son à la détection de fumée            |                     |     |
+| FS3       | Doit pouvoir émettre de la lumière à la détection d'une flamme |                     |     |
 
-### Etapes du travail
 
-L'équipe a été scindé en trois parties : 
-* Une partie s'occupant de la partie électronique
-* Une partie qui s'occupe du design et de la modélisation 3D
-* Une partie qui s'occupe de la documentation
 
-### Liste du matériel
+## 3. Analyse technique
 
-| **COMPOSANTS**              | **QUANTITE** |
-|-----------------------------|:------------:|
-| Carte Arduino               |      1       |
-| Servomoteurs                |      5       |
-| ESP 32 CAM                  |      1       |
-| Module de pilote de moteurs |      1       |
-| Capteur de flamme           |      1       |
-| Capteur de gaz              |      1       |
-| Capteurs ultrason           |      1       |
-| Capteur de niveau d’eau     |      1       | 
-| Pompe à eau                 |      1       |
-| Tuyau d’eau                 |      1       |
-| Réservoir d’eau             |      1       |
+### 3.1. Liste du matériel utilisé
 
-### Réalisation du premier objectif : Déplacement du robot
+| **COMPOSANTS**          | **QUANTITE** |
+|-------------------------|:------------:|
+| Carte Arduino           |      1       |
+| Servomoteurs            |      5       |
+| ESP 32 CAM              |      1       |
+| Buzzer                  |      1       |
+| Capteur de flamme       |      1       |
+| Capteur de gaz          |      1       |
+| Capteurs ultrason       |      1       |
+| Capteur de niveau d’eau |      1       | 
+| Pompe à eau             |      1       |
+| Tuyau d’eau             |      1       |
+| Réservoir d’eau         |      1       |
 
-Pour assurer le déplacement du robot, nous allons utiliser des servos débridés.  
+
+### 3.2. Analyse mécanique 
+
+* Le dispositif dispose de deux étages imprimés en PLA.  
+Le premier étage portant la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
+de traction, les capteurs de flamme, le capteur ultrason et la battérie, tandis que le deuxième étage porte tout le 
+système d'arrosage, c'est-à-dire le réservoir d'eau, la pompe à eau, le tuyau ainsi que 
+le servomoteur pour le déplacement du jet d'eau.  
+
+
+* Pour assurer le déplacement du robot, nous allons utiliser des servos débridés.  
+
+<div style="float:right; margin-left:20px;">
+    <img src="images/servo_parties.png" alt="servo_parties.png">
+</div>
 Les étapes pour débrider sont : vérifier si le servomoteur fonctionne correctement, ouvrir le boîtier du servomoteur,
 déconnecter le potentiomètre, ajuster la vitesse à 90° et téléverser le code, mettre en marche le servomoteur, ajuster
 le potentiomètre pour que le servomoteur ne tourne plus à 90°, et enfin, remonter
 le boîtier.  
 
-![servo_parties.png](images/servo_parties.png) 
 
 Les servomoteurs ainsi débridés fonctionnent en rotation perpétuelle dans les 2 sens. Donc pour les angles compris 
 entre 0° et 89° ils tournent dans le sens horaire, pour les angles compris entre 91° et 180° ils tournent dans le sens 
 antihoraire et à 90°, ils s'arrêtent. Nous avons mis plus bas, un extrait du programme qui illustre l'utilisation de ces 
 angles.
 
-* Modélisation
+Seul le servo assurant le control du jet d'eau n'est pas débridé.
 
-Le robot est constitué de deux étages imprimés en PLA :
-Le premier étage porte la plus par des éléments électroniques du robot, c'est-à-dire la carte arduino, les 4 servomoteurs
-de traction, les capteurs de flamme, le capteur ultrason et la battérie.  
-
-![etage_1(1).png](images/etage_1(1).png)  
-
-Le deuxième étage porte tout le système d'arrosage, c'est-à-dire le réservoir d'eau, la pompe à eau, le tuyau ainsi que 
-le servomoteur pour le déplacement du jet d'eau.
-
-![etage_2(1).png](images/etage_2(1).png)
+Voici donc les images du modèle du dispositif réalisé avec fusion 360.
 
 
-rendue aprés impression 
 
-![20240321_172733](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/986bbade-984e-4528-8c53-804ea7cc4c49)
+Vue du dessus (1er étage)
 
-images des modélisations
+![1er_étage_vue_haut.jpg](images/1er_etage_vue_haut.jpg)
 
-![WhatsApp Image 2024-03-22 at 17 14 55](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/cea6c0df-5114-4baf-9146-a7f26d31de3d)
+Vue de dessus (2ᵉ étage)
 
-![WhatsApp Image 2024-03-22 at 17 14 54](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/c63d95f3-1710-4d19-9919-dbe76d13a75f)
+![2e_etage_vue_bas.jpg](images/2e_etage_vue_bas.jpg)
 
-![WhatsApp Image 2024-03-22 at 17 14 53 (1)](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/0c53bbb9-846a-4df7-9674-1a4984f14248)
+Vue frontale :
+![dispositif_vue_devant.jpg](images/dispositif_vue_devant.jpg)
+
+Vue latérale :
+![dispositif_vue_gauche.jpg](images/dispositif_vue_gauche.jpg)
+
+Vue de derrière :
+![dispositif_vue_arriere.jpg](images/dispositif_vue_arriere.jpg)
+
+Vue en perspective:
+
+![dispositif_vue_angle.jpg](images/dispositif_vue_angle.jpg)  
 
 
-![WhatsApp Image 2024-03-22 at 17 14 53](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/7ce5256e-d3e6-49d1-b5e2-2dd641fee042)
+### 3.3. Analyse électrique 
+
+* **Montage électrique :** 
+
+Voici le premier montage concernant les moteurs :
+
+![circuit_servo.png](images/circuit_servo.png)
+
+* **Diagramme d'activité :** 
+
+* **Simulation**
+
+
+
+
+
+
+
+## 4. Evolution du projet
+
+### 4.1 Etapes du travail
+
+L'équipe a été scindé en trois parties : 
+* Une partie s'occupant de la partie électronique
+* Une partie qui s'occupe du design et de la modélisation 3D
+* Une partie qui s'occupe de la documentation
+
+
+
+
+
+
+
+![étage_2(1).png](images/etage_2(1).png)
+
 
 * Programme  
 
@@ -186,9 +234,7 @@ Pour ce qui est du contrôle des servo et du code, nous sommes basé sur une log
      
 * Electronique 
 
-Voici le premier montage concernant les moteurs :
 
-![circuit_servo.png](images/circuit_servo.png)
   
 ### Détection de fumée et de flamme
 
@@ -196,10 +242,7 @@ Pour assurer la detection des flammes, nous utilisons 3 capteurs de flamme stand
 l'un au milieu, un autre à sa gauche et le dernier à droite.
 
 ![capteur_de_flamme.png](images/capteur_de_flamme.png)
-
-Contrairement à la plupart des capteurs de flammes comme le KY-026 équipés d'une plaquette électronique portant 
-un potentiomètre permettant de régler la sensibilité, ceux-ci sont uniquement constitués de phototransistors.
-Cependant, nous n'avons pas encore trouvé le datasheet pouvant nous donner des précisions sur sa précision. 
+ 
 
 
 
@@ -259,8 +302,8 @@ supérieure à zéro, une flamme est alors détectée : le dispositif se déplac
 
 Pour utiliser ce capteur, nous nous sommes inspiré du cours dans le document : **Arduino_En_pratique_Avec_10_Leçons**
 De _Khalid LAFKIH_
-[Arduino_En_pratique_Avec_10_Leçons.pdf](sources/Arduino_En_pratique_Avec_10_Lecons.pdf)
-il faut noter que ce document nous l' avons consulter à plusieurs reprises tout au long du projet  
+[Arduino_En_pratique_Avec_10_Leçons.pdf](sources/Arduino_En_pratique_Avec_10_Lecons.pdf), 
+il faut noter que ce document, nous l'avons consulté à plusieurs reprises tout au long du projet  
      
 
   
@@ -284,7 +327,7 @@ Voici le reservoir d'eau utilisé ici
      
 ![IMG_2295.JPG](images/IMG_2295.JPG)
 
-images des modélisations
+Images des modélisations
 
  * Programme de cette partie
    
@@ -297,7 +340,7 @@ Dans cette partie, nous présentons la façon dont le montage a été fait
 ### Test des trois premiers objectifs 
 
  * premier test 
-avec ce premier test nous avons vérifier si le capteur de gaz fonctionne 
+Avec ce premier test, nous avons vérifié si le capteur de gaz fonctionne 
 et si le système d'extinction fonctionne 
 
  video 
@@ -349,7 +392,7 @@ De _Khalid LAFKIH_
 ### Conclusion 
 
 
-Notre projet de réalisation d’un mini robot pompier, baptisé Phoenix, a été une expérience enrichissante. Malgré les défis rencontrés, nous avons réussi à atteindre certains de nos objectifs. Le robot est capable de se déplacer de manière autonome , de détecter les flammes et la fumée puis les éteindre. Cependant, nous avons dû faire des compromis en raison des contraintes de temps.Malheureusement, les fonctionnalités d’évitement des obstacles et de transmission de captures vidéo vers un téléphone mobile n’ont pas pu être entièrement réalisées. Néanmoins, nous considérons ce projet comme une étape importante dans notre apprentissage et notre compréhension des systèmes robotiques.En somme, bien que tous nos objectifs n’aient pas été atteints, nous sommes fiers du travail accompli et des compétences acquises tout au long de ce projet. Nous espérons que Phoenix continuera d’inspirer d’autres projets futurs dans le domaine de la robotique
+Notre projet de réalisation d’un minirobot pompier, baptisé Phoenix, a été une expérience enrichissante. Malgré les défis rencontrés, nous avons réussi à atteindre certains de nos objectifs. Le robot est capable de se déplacer de manière autonome, de détecter les flammes et la fumée puis les éteindre. Cependant, nous avons dû faire des compromis en raison des contraintes de temps. Malheureusement, les fonctionnalités d’évitement des obstacles et de transmission de captures vidéo vers un téléphone mobile n’ont pas pu être entièrement réalisées. Néanmoins, nous considérons ce projet comme une étape importante dans notre apprentissage et notre compréhension des systèmes robotiques. En somme, bien que tous nos objectifs n’aient pas été atteints, nous sommes fiers du travail accompli et des compétences acquises tout au long de ce projet. Nous espérons que Phoenix continuera d’inspirer d’autres projets futurs dans le domaine de la robotique
 
 
 
