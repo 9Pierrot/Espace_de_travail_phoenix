@@ -7,7 +7,7 @@ tels que le feu. En raison de cette symbolique, le phénix est parfois utilisé 
 la lutte contre les flammes. D'où le nom du projet **Phoenix**.
 
 
-### Remerciement
+### Remerciements
 
 Nous souhaitons exprimer notre profonde gratitude envers toutes les personnes qui ont contribué au succès de notre projet **Phoenix**. En particulier, nous remercions chaleureusement notre encadreur, M. Justin HANKEM, pour ses précieux conseils et son suivi attentif. Nos collaborateurs, ainsi que les experts M. Sylvestre OLANLO qui est le PCA de **TIDD** qui organise **arduino days** au sein du **lycée international Cours lumière** ; M. Giovanni KAMEKPO qui est le président de **TIDD** au Togo ; M. Josaphat BANKAÏ qui est le responsable du fablab **TIDD** qui ont partagé leur savoir-faire et leurs connaissances avec nous, méritent également nos remerciements. Enfin, nous sommes reconnaissants envers nos responsables administratifs qui ont constamment soutenu et accompagné notre réussite.
 
@@ -309,8 +309,7 @@ il faut noter que ce document, nous l'avons consulté à plusieurs reprises tout
   
 * Electronique  
 
-![WhatsApp Image 2024-03-23 at 12 02 24](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/69ee59a7-b636-43ba-b39f-9440fa7c0e71)
-
+![WhatsApp Image 2024-03-23 at 12 02 24 (1)](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/d8271e9b-2bfd-478c-ae8a-001ea8af7a24)
 
 ### Système d'extinction
 
@@ -329,14 +328,17 @@ Voici le reservoir d'eau utilisé ici
 
 image de la pompe utiliser
 
-![pompe à eau](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/e9bae84c-74ed-401b-bd64-763705ce4dde)
+![pompe à eau (3)](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/19069a08-b96f-4dfb-af6e-c62b65a22cc3)
+
+
 
 
  * Programme de cette partie
    
  * Electronique
    
-![WhatsApp Image 2024-03-23 at 12 02 24](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/69ee59a7-b636-43ba-b39f-9440fa7c0e71)
+![WhatsApp Image 2024-03-23 at 12 02 24 (1)](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/29aca571-705a-410b-940a-d5d67e42e2b9)
+
 
 
 Dans cette partie, nous présentons la façon dont le montage a été fait 
