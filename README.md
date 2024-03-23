@@ -17,6 +17,7 @@ Nous souhaitons exprimer notre profonde gratitude envers toutes les personnes qu
 2. Analyse fonctionnelle  
 3. Analyse technique
 4. Evolution du projet
+5. Conclusion
 
 ## 1. Introduction et objectifs du projet
 
@@ -119,7 +120,7 @@ Vue de derrière :
 
 Vue en perspective:
 
-![dispositif_vue_angle.jpg](images/dispositif_vue_angle.jpg)  
+![dispositif.jpg](images%2Fdispositif.jpg)  
 
 
 ### 3.3. Analyse électrique 
@@ -298,7 +299,7 @@ L'équipe a été scindé en trois parties :
 
 
 
-
+Premières impressions
 
 
 
@@ -549,7 +550,7 @@ De _Khalid LAFKIH_
 [Arduino_En_pratique_Avec_10_Leçons.pdf](sources/Arduino_En_pratique_Avec_10_Lecons.pdf)
 
 
-### Conclusion 
+## 5. Conclusion 
 
 
 Notre projet de réalisation d’un minirobot pompier, baptisé Phoenix, a été une expérience enrichissante. Malgré les défis rencontrés, nous avons réussi à atteindre certains de nos objectifs. Le robot est capable de se déplacer de manière autonome, de détecter les flammes et la fumée puis les éteindre. Cependant, nous avons dû faire des compromis en raison des contraintes de temps. Malheureusement, les fonctionnalités d’évitement des obstacles et de transmission de captures vidéo vers un téléphone mobile n’ont pas pu être entièrement réalisées. Néanmoins, nous considérons ce projet comme une étape importante dans notre apprentissage et notre compréhension des systèmes robotiques. En somme, bien que tous nos objectifs n’aient pas été atteints, nous sommes fiers du travail accompli et des compétences acquises tout au long de ce projet. Nous espérons que Phoenix continuera d’inspirer d’autres projets futurs dans le domaine de la robotique
