@@ -36,17 +36,17 @@ Le système doit pouvoir :
 * Transmettre une capture vidéo à un téléphone mobile
 
 ## 2. Analyse fonctionnelle
-| Fonctions | Rôle                                                           | Critères            | Niveau d'exigence |
-|-----------|----------------------------------------------------------------|---------------------|-------------------|
-| FP1       | Doit pouvoir détecter les flammes et la fumée                  | Détection de flamme | A 1m|
-| FP2       | Doit pouvoir éteindre les flammes                              | Emission d'eau       |A 10cm|
-| FP3       | Doit pouvoir se déplacer de façon autonome                     | Vitesse et adhérence | Reste dans la zone si il y a un mur |
-| FP4       | Doit pouvoir éviter les obstacles                              |                     |     |
-| FP5       | Doit pouvoir envoyer une capture vidéo                         | Transmission d'image|On doit pouvoir voir l'état de la piéce
-|           |                                                                |                     |     |
-| FS1       | Doit pouvoir résister aux températures élevées                 |                     |     |
-| FS2       | Doit pouvoir émettre un son à la détection de fumée            | Diffussion de son   |     |
-| FS3       | Doit pouvoir émettre de la lumière à la détection d'une flamme |                           |      
+| Fonctions | Rôle                                                           | Critères               | Niveau d'exigence                                                    |
+|-----------|----------------------------------------------------------------|------------------------|----------------------------------------------------------------------|
+| FP1       | Doit pouvoir détecter les flammes et la fumée                  | Détection de flamme    | A 0.5 m                                                              |
+| FP2       | Doit pouvoir éteindre les flammes                              | Emission d'eau         | A 10cm                                                               |
+| FP3       | Doit pouvoir se déplacer de façon autonome                     | Vitesse et adhérence   |                                                                      |
+| FP4       | Doit pouvoir éviter les obstacles                              | Déplacement            | Eviter les obstacles situés à une distance située entre 2cm et 400cm |
+| FP5       | Doit pouvoir envoyer une capture vidéo                         | Transmission d'image   | On doit pouvoir voir l'état de la piéce                              |
+|           |                                                                |                        |                                                                      |
+| FS1       | Doit pouvoir résister aux températures élevées                 | Carrosserie résistante | Jusqu'à 60°C                                                         |
+| FS2       | Doit pouvoir émettre un son à la détection de fumée            | Emission  de son       | ___                                                                  |
+| FS3       | Doit pouvoir émettre de la lumière à la détection d'une flamme | Emission  de lumière   | ___                                                                  |   
 
 
 
@@ -126,11 +126,158 @@ Vue en perspective:
 
 * **Montage électrique :** 
 
-Voici le premier montage concernant les moteurs :
+![WhatsApp Image 2024-03-23 at 12 02 24 (1)](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/d8271e9b-2bfd-478c-ae8a-001ea8af7a24)
 
-![circuit_servo.png](images/circuit_servo.png)
+
+* **Programme**
+
+      #include <Servo.h>
+      
+      /* les broches des capteurs de flamme sont connectées ainsi :
+      le capteur du milieu est connecté à la broche A0, celui de gauche à A1 
+      et celui de droite à A2
+      */
+      
+      #define c_mq2 A3 //broche du capteur de gaz
+      #define pompe 12 //broche de la pompe
+      #define buzzer 2 //broche du buzzer
+      
+      int valeur_gaz;
+      
+      int c_milieu = 4; 
+      int c_gauche = 7; 
+      int c_droit = 8; 
+      
+      int v_milieu; 
+      int v_gauche; 
+      int v_droit;
+      
+      Servo servo_G1; // servo gauche devant
+      Servo servo_G2; // servo gauche derrière
+      Servo servo_D1; // servo droit devant
+      Servo servo_D2; // servo droit derrière
+      
+      Servo servo_pompe; // servo moteur de la pompe
+      
+      void setup() {
+        pinMode(pompe, OUTPUT);
+        pinMode(c_mq2, INPUT);
+        pinMode(buzzer, OUTPUT);
+      
+        pinMode(c_milieu, INPUT);
+        pinMode(c_gauche, INPUT);
+        pinMode(c_droit, INPUT);
+      
+        servo_G1.attach(3);
+        servo_G2.attach(5);
+        servo_D1.attach(6);
+        servo_D2.attach(9);
+        
+        servo_pompe.attach(10);
+      }
+      
+      void loop(){
+      
+        valeur_gaz = analogRead(c_mq2);
+      
+        v_milieu = digitalRead(c_milieu);// valeur lue au niveau du capteur du milieu
+        v_gauche = digitalRead(c_gauche);// valeur lue au niveau du capteur de gauche
+        v_droit = digitalRead(c_droit); // valeur lue au niveau du capteur de droite
+      
+        if (valeur_gaz> 200) { 
+          digitalWrite(buzzer, HIGH); 
+          }
+         else { 
+          digitalWrite(buzzer, LOW); 
+          }
+      
+      
+        if (v_milieu == 0 && v_gauche == 0 && v_droit == 0){
+          arret();
+        }
+        else if (v_milieu == 1){
+          avancer();
+        }
+        else if (v_gauche == 1){
+          gauche();
+        }
+        else if (v_droit == 1){
+          droite();
+        }
+      
+        delay(2000);
+      
+        while(v_milieu == 1){
+          arrosage();
+        }
+        arret();
+        
+      }
+      
+      
+      // les fonctions pour effectuer les différents mouvements
+      void avancer(){
+        // les 4 moteurs tournent vers l'avant
+        servo_G1.write(170);
+        servo_G2.write(170);
+        servo_D1.write(10);
+        servo_D2.write(10);
+      }
+      
+      void reculer(){
+        // les 4 tournent vers l'arrière
+        servo_G1.write(10);
+        servo_G2.write(10);
+        servo_D1.write(170);
+        servo_D2.write(170);
+      }
+      
+      void gauche(){
+        // on arrête le moteur avant gauche en laissant tourner les autres
+        servo_G1.write(90);
+        servo_G2.write(170);
+        servo_D1.write(10);
+        servo_D2.write(10);
+      }
+      
+      void droite(){
+        // on arrête le moteur avant droit en laissant tourner les autres
+        servo_G1.write(170);
+        servo_G2.write(170);
+        servo_D1.write(90);
+        servo_D2.write(10);
+      }
+      
+      void arret(){
+        // les 4 moteurs tournent vers l'avant
+        servo_G1.write(90);
+        servo_G2.write(89);
+        servo_D1.write(91);
+        servo_D2.write(90);
+      }
+      
+      // fontion pour émettre le jet d'eau
+      void arrosage(){
+      
+        digitalWrite(pompe, HIGH); // on allume la pompe
+        // le servo fait ensuite un balayage
+        for (int pos=50; pos<=130; pos++){
+          servo_pompe.write(pos);
+          delay(100);
+        }
+        for (int pos=130; pos>=50; pos--){
+          servo_pompe.write(pos);
+          delay(100);
+        }
+        // puis on arrête la pompe
+        digitalWrite(pompe, LOW);
+      }
+
+
 
 * **Diagramme d'activité :** 
+
+
 
 * **Simulation**
 
