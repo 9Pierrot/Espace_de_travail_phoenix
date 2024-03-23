@@ -308,7 +308,7 @@ Premières impressions
 
 * Programme  
 
-Voici un extrait du programme qui contient toutes les fonctions que nous utilisons pour assurer 
+Voici un extrait du premier programme qui contient toutes les fonctions que nous utilisons pour assurer 
 les déplacements du robot.
 
     #include <Servo.h> // librairie incluse pour la gestion des servos
@@ -396,6 +396,9 @@ l'un au milieu, un autre à sa gauche et le dernier à droite.
 
 ![MQ-6](https://github.com/9Pierrot/Espace_de_travail_phoenix/assets/162814424/e5f14845-162b-4aae-8634-573b7147ac33)
 
+* Simulation réalisée 
+
+[test_gaz.mp4](videos/test_gaz.mp4)
 
 * Programme   
 
